@@ -7,7 +7,7 @@ logger = logging.getLogger('discord')
 # from sqlalchemy import Column, Text
 # Base = declarative_base()
 # engine = create_async_engine(
-#     "postgresql+asyncpg://postgres:vlowkz3o@localhost/postgres",
+#     "postgresql+asyncpg://postgres:password@localhost/postgres",
 #     echo=True,
 # )
 # session = AsyncSession(engine, future=True)
@@ -38,7 +38,7 @@ __all__ = ['create_connection', 'add_line', 'create_table', 'delete_table']
 def create_connection():
     # изменить данные postgreSQL на свои
     connection = psycopg2.connect(user="postgres",
-                                  password="vlowkz3o",
+                                  password="password",
                                   host="127.0.0.1",
                                   port="5432",
                                   database="postgres")
